@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/lokkeshwaran/Downloads/UNI/SEM6/Programmierung2/Praktikum/Prog2-Praktikum-Git/Praktikum1",
+      "program": "/Users/lokkeshwaran/Downloads/UNI/SEM6/Programmierung2/Praktikum/Prog2-Praktikum-Git/Praktikum1/build/Debug/outDebug"
+    }
+  ]
+}
