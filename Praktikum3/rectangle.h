@@ -19,11 +19,13 @@ class rectangle{
         int umfang();
 
         //getter
-        int getx(){
-            return a;
-        }
-        int gety(){
-            return b;
-        }
+        int getx();
+        int gety();
+        int getposx();
+        int getposy();
+       
+        //member function
+        void printinfo();
+        void draw();
 
 };
