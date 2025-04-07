@@ -14,6 +14,7 @@ int main(int argc, char* argv[]){
     return 1;
     }
   
+    cout << endl;
     int length = atoi(argv[1]);
     int width = atoi(argv[2]);
     int px = atoi(argv[3]);
@@ -23,5 +24,16 @@ int main(int argc, char* argv[]){
     rectangle rect(length, width, px, py);
     rect.printinfo();
     rect.draw();
+
+// Now its easy to create as much as objects i want without writing lot of code 
+
+/*   rectangle rect1(5,5,5,5);
+    rect1.printinfo();
+    rect1.draw(); */
+
+
+
+
+
     return 0;
 }

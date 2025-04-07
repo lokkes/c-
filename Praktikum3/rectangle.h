@@ -10,6 +10,7 @@ class rectangle{
     public:
 
         //constructor
+        rectangle();
         rectangle(int length, int width, int px, int py);
 
         //to calculate Area 
