@@ -1,10 +1,19 @@
+#include "Date.h"
+
 
 // constructor defenition 
-
-Date(int d, int m, int y){
+Date::Date(int d, int m, int y){
    
-   int day = d;
-   int month = m;
-   int year = y;
-
+  day = d;
+  month = m;
+  year = y;
 }
+
+ void Date::setDate(int d=1, int m = 1, int y = 2001){
+   day = d;
+   month=m;
+   year=y;
+ }
+
+
+
