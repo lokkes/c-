@@ -1,6 +1,8 @@
 #ifndef DATE
 #define DATE
 
+#include <iostream>
+
 class Date{
 
     private:
@@ -21,7 +23,7 @@ class Date{
     //memberfunktion
     void setDate(int d=1, int m = 1, int y = 2001);
 
-    void show(ostream &os) const;// whats ostream ??
+    void show(ostream & os) const;
 
     //getter and setter 
     
