@@ -17,6 +17,8 @@ int main(int argc, char*argv[]){
     P.show(cout); cout << endl; // pass cout as an argument ?
 
     Date today;
+    today.setDate();
+
     P.setBirthday(today.getday(), today.getmon(), today.getyear());
 
     P.show(cout); cout << endl;

@@ -24,6 +24,18 @@ os << day << "/" << month << "/" << year;
 
 }
 
+//nur als bsp 
+int Date::getcurrentdate(){
+  return day;
+
+int Date::getcurrentmonth(){
+return month;
+}
+
+int Date::getcurrentyear(){
+return year;
+}
+
  
 
 

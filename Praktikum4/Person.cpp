@@ -19,7 +19,7 @@ Person::Person(const char *name, const char*surname){
     strncpy(this->surname,surname,30);
 }
 
-void Person::show(ostream &os){
+void Person::show(ostream& os){
 
 os << "Name : " << name << surname;
 os << "Birthday :  " << birthday.show(os);
