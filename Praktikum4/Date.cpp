@@ -10,6 +10,10 @@ Date::Date(int d, int m, int y){
 
 }
 
+Date::Date{
+  // set current date
+}
+
  void Date::setDate(int d=1, int m = 1, int y = 2001){
 
    day = d;
@@ -27,6 +31,7 @@ os << day << "/" << month << "/" << year;
 //nur als bsp 
 int Date::getcurrentdate(){
   return day;
+}
 
 int Date::getcurrentmonth(){
 return month;
