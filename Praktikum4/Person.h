@@ -16,7 +16,7 @@ class Person{
     Person(const char *name, const char*surname, int d, int m, int y);
     Person(const char *name, const char*surname);
 
-    void show(ostream &os);// whats this ?
+    void show(ostream &os);
 
     void setBirthday(int d, int m, int y);
 
