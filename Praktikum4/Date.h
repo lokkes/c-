@@ -2,6 +2,7 @@
 #define DATE
 
 #include <iostream>
+#include <iosfwd>
 
 
 class Date{
@@ -14,6 +15,7 @@ class Date{
     int getcurrentdate();
     int getcurrentmonth();
     int getcurrentyear();
+    
 
     public:
     //constructor
@@ -21,15 +23,15 @@ class Date{
     Date();
 
     //memberfunktion
-    void setDate(int d=1, int m = 1, int y = 2001);
-   
+    void setDate(int d=1, int m = 11, int y = 2001);
+ 
 
     //to print the objects 
-    void show(ostream & os) const;
+    void show(std::ostream& os) const;
 
     //getter and setter 
     int getday(){return day;}
-    int getmon(){return month;}
+    int getmonth(){return month;}
     int getyear(){return year;}
    
 };

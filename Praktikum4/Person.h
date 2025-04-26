@@ -1,6 +1,9 @@
 #ifndef PERSON
 #define PERSON
 
+#include <iosfwd>
+#include "Date.h"
+
 class Person{
 
     private:
@@ -16,7 +19,7 @@ class Person{
     Person(const char *name, const char*surname, int d, int m, int y);
     Person(const char *name, const char*surname);
 
-    void show(ostream &os);
+   void show(std::ostream& os);
 
     void setBirthday(int d, int m, int y);
 
@@ -29,6 +32,6 @@ class Person{
     //setter funktionen
     void setName(const char *name);
     void setSurname(const char *surname);
-}
+};
 
 #endif
