@@ -1,32 +1,40 @@
 #ifndef _STRING_
 #define _STRING_
 
-class CString
-{
-  char * pBuf;
-  int    Len;
+#include<iostream>
 
-public:
+    class CString
 
-//constructor
-  CString ();
-  CString (const char* pStr);
-  CString (const CString& other);
-  CString (char C, int n);
+        {
+          char * pBuf;
+          int    Len;
 
-  //destructor
-  ~CString();
+        public:
 
-  void show();
-  char& CIdx(int i); // liefert eine Referenz auf das i-te Zeichen
-  CString& operator=(const CString& other);
+          //constructor
+          CString ();
+          CString (const char* pStr);
+          CString (const CString& other);
+          CString (char C, int n);
+          ~CString();
 
-  //operatorenÜberladung
-  friend char& operator+(const CString& strgObj, const char* string);
-  friend char& operator+(const char* string,const CString& strgObj);
-  
+          //member functions
+          void show();
+          char& CIdx(int i); // liefert eine Referenz auf das i-te Zeichen
+          int GetLength()const; 
 
-};
+          //operator overloading
+          CString& operator=(const CString& other);
+          CString operator+(const char* str);
+          CString operator+(const CString& rsideval);
+          friend CString operator+(const char* string, const CString& other);
+
+          // Indexing operator for direct access to characters
+          char& operator[](int index);
+
+          // Friend function for printing
+          friend std::ostream& operator<<(std::ostream& os, const CString& obj);
+        };
 
 
 #endif
