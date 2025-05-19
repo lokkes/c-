@@ -3,7 +3,7 @@
 
 #include "Figur.h"
 
-/* using namespace std; */
+using namespace std;
 
 
 class Rechteck : public Figur{
@@ -26,11 +26,17 @@ Rechteck(int l, int w){
 
     }
 
-    friend std::ostream& operator<<(std::ostream&os,Rechteck r ){
+     double umfang(){
+        return 2 * (length + width);
+    }
 
-        os << r.flache();
+    friend std::ostream& operator<<(std::ostream&os,Rechteck& r ){
+
+        os << "Rechteck_Flache : " << r.flache() << "  " << "Rechteck_Umfang : " << r.umfang() << endl;
         return os;
     }
+
+
 };
 
 #endif

@@ -16,11 +16,10 @@ int main(int argc, char*argv[]){
 
     Figur* ptr[] = {&r, &q, &k};
 
-    r.flache();
-    double quad = q.flache();
-    k.umfang();
-
-    cout << "Recheckfläche : " << r << "  " << "Quadrat : " << quad << "  " << "Kreis : " << k <<  endl; 
+    cout << r;
+    cout << q;
+    cout << k;
+     
    
     
 
